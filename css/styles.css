@@ -1,0 +1,251 @@
+/********** Elements *********/
+* {
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Headers */
+#header-nav {
+  background-color: #f6b319;
+  border-radius: 0;
+  border: 0;
+}
+
+.navbar-brand {
+  padding-top: 25px;
+  margin-bottom: 40px;
+}
+
+.navbar-brand h1 {
+  font-family: 'Arial', serif;
+  color: #557c3e;
+  font-size: 1.8em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 0;
+  line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus {
+  text-decoration: none;
+}
+.navbar-brand p { /* Kosher cert */
+  color: #000;
+  text-transform: uppercase;
+  font-size: .7em;
+  margin-top: 15px;
+}
+.navbar-brand p span { /* Star-K */
+  vertical-align: middle;
+}
+
+#nav-list {
+  margin-top: 10px;
+}
+#nav-list a {
+  color: #951C49;
+  text-align: center;
+}
+#nav-list a:hover {
+  background: #E7E7E7;
+}
+#nav-list a span {
+  font-size: 1.8em;
+}
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar {
+  border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle {
+  clear: both;
+  margin-top: -30px;
+}
+/* END HEADER */
+
+/* Element Tags */
+
+body{
+  background-color: #f4ecbe;
+}
+
+h2{
+  font-family: 'Arial', serif;
+  color: #f6b319;
+  font-size: 1.9em;
+  text-transform: uppercase;
+  font-weight: bold;
+  text-shadow: 1px 1px 1px #222;
+  margin-top: 0;
+  margin-bottom: 20px;
+  line-height: .75;  
+  text-align: center;
+}
+
+h3 {  
+  color: black;
+  font-size: 1.5em;  
+  margin-top: 1%;
+  margin-bottom: 20px;
+  line-height: .75;  
+  text-align: center;
+}
+
+p {
+  border: 1px solid black;
+  background-color: #42f4b6;
+  width: 100%;
+  height: 300px;
+  font-style: italic;
+  text-shadow: 0px 0px 0px #222;
+  margin-right: auto;
+  margin-left: auto;
+  color: #070142;  
+  padding-top: 50px;
+  padding-bottom: 40px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+div{
+  position: relative;
+}
+
+/********** IDs *********/
+
+#chicken-tile, #naan-tile, #prawn-tile{
+overflow-y: hidden;
+}
+
+#p1, #p2, #p3{
+  background-color: #42f4b6;
+  font-size: 1.5em;
+  height: 10%;
+  width: 45%;  
+  position: absolute;
+  top: 1%;
+  right: 29%;
+  border: 0px solid black;
+  text-align: center;
+  color: black;
+  padding-top: 0px;
+  word-wrap: break-word;
+  margin: 10px auto 15px;
+}
+
+/********** Classes *********/
+.container-fluid {
+  padding-right: 15px;
+  padding-left: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+/* Grid Layout */
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    #nav-list a span {
+      font-size: 1.6em;
+    }
+
+    .navbar-brand {
+      padding-top: 10px;
+      margin-bottom: 0px;
+      height: 80px;
+    }
+
+    .navbar-header{
+      width: 600px;
+    }
+
+    p{
+      height: 80%;
+    }
+
+    #p1, #p2, #p3{
+    background-color: #42f4b6;
+    font-size: 1.5em;
+    height: 10%;
+    width: 45%;  
+    position: absolute;
+    top: 1%;
+    right: 29%;
+    border: 0px solid black;
+    text-align: center;
+    color: black;
+    padding-top: 0px;
+    word-wrap: break-word;
+    margin: 10px auto 15px;
+  }
+
+  #chicken-tile, #naan-tile, #prawn-tile{
+     overflow-y: hidden;
+  }
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px) {
+  /* Header */
+  .navbar-brand {
+    padding-top: 10px;
+    margin-bottom: 0px;
+    height: 80px;
+  }
+
+  .navbar-brand h1 { /* Restaurant name */
+    padding-top: 10px;
+    font-size: 8vw; /* 1vw = 1% of viewport width */
+  }
+
+ #nav-list a {
+    text-align: left;
+  }
+
+  #collapsable-nav a { /* Collapsed nav menu text */
+    font-size: 1.2em;
+  }
+
+  #collapsable-nav a span { /* Collapsed nav menu glyph */
+    font-size: 1em;
+    margin-right: 5px;
+  }
+
+  /* End Header */
+
+  /* Home Page */
+
+  p{
+    height: 80%;
+    padding-top: 13%;
+  }
+
+  #p1, #p2, #p3{
+    background-color: #42f4b6;
+    font-size: 1.2em;
+    height: 2%;
+    width: 45%;  
+    position: absolute;
+    top: 1%;
+    right: 29%;
+    border: 0px solid black;
+    text-align: center;
+    color: black;
+    padding-top: 0px;
+    word-wrap: break-word;
+    margin: 10px auto 15px;
+  }
+
+  #p3{  
+    width: 59%;
+    text-align: right;
+  }
+
+  #chicken-tile, #naan-tile, #prawn-tile{
+    overflow-y: hidden;
+  }
+}
